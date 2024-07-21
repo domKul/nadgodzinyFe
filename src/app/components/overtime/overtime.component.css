@@ -1,23 +1,52 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Wyższy dystans od góry */
+  margin-bottom: 20px; /* Dystans poniżej tabeli */
+  padding: 0 400px; /* Dystans od lewej i prawej strony kontenera */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; /* Mniejszy dystans poniżej okienek wyszukiwania */
+}
+
+.filter-container {
+  display: flex;
+  align-items: center; /* Wyśrodkowanie przycisku 'Filter' w pionie */
+  gap: 10px; /* Odstęp pomiędzy okienkami wyszukiwania i przyciskiem */
+}
+
+.filter-field {
+  margin-right: 10px; /* Odstęp pomiędzy okienkami wyszukiwania */
+}
+
+.filter-button {
+  margin-bottom: 20px;
+  margin-left: 10px; /* Odstęp od ostatniego okienka wyszukiwania */
+}
+
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  width: 20%; /* Szerokość tabeli, można dostosować */
+  max-width: 120px; /* Maksymalna szerokość tabeli */
+  margin: 0 auto; /* Wyśrodkowanie tabeli */
+  border-collapse: collapse; /* Usunięcie odstępów między komórkami tabeli */
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
+th.mat-header-cell, td.mat-cell {
+  text-align: center;
 }
 
-th {
-  background-color: #f2f2f2;
-  text-align: left;
+.mat-form-field {
+  width: 200px; /* Szerokość okienek wyszukiwania */
 }
 
-tr:nth-child(even) {
-  background-color: #f9f9f9;
+.centered-table {
+  margin: 0 auto;
 }
 
-tr:hover {
-  background-color: #f1f1f1;
+.mat-elevation-z8 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
