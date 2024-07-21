@@ -1,0 +1,26 @@
+<div *ngIf="overtimes.length">
+  <h2>Overtimes</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Creation Date</th>
+      <th>Overtime Date</th>
+      <th>Status</th>
+      <th>Duration (hours)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let overtime of overtimes">
+      <td>{{ overtime.id }}</td>
+      <td>{{ overtime.creationDate }}</td>
+      <td>{{ overtime.overtimeDate }}</td>
+      <td>{{ overtime.status }}</td>
+      <td>{{ overtime.duration }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="!overtimes.length">
+  <p>No overtimes available.</p>
+</div>
