@@ -18,7 +18,4 @@ export class HomeComponent {
   goToOvertime(): void {
     this.router.navigate(['/overtime']);
   }
-
-  //todo
-  //testy git flow
 }
