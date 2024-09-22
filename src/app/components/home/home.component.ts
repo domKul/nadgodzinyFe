@@ -12,7 +12,8 @@ import {MatButton} from "@angular/material/button";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+  }
 
   goToOvertime(): void {
     this.router.navigate(['/overtime']);

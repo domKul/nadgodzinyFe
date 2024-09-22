@@ -11,7 +11,7 @@ import {MatButton} from "@angular/material/button";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   isLoading = true;
 
   ngOnInit(): void {
