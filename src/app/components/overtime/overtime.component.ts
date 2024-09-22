@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
-import { MatTableDataSource } from '@angular/material/table';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatTableModule } from '@angular/material/table';
-import { CommonModule } from '@angular/common';
+import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {CommonModule} from '@angular/common';
 import {OvertimeResponseDto} from "../model/OvertimeResponseDto";
 import {OvertimeService} from "../services/OvertimeService";
 import {MatButton} from "@angular/material/button";
