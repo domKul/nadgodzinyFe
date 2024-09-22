@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { OvertimeComponent } from './components/overtime/overtime.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {OvertimeComponent} from './components/overtime/overtime.component';
 import {HomeComponent} from "./components/home/home.component";
 
 export const routes: Routes = [
-  { path: 'overtime', component: OvertimeComponent },
-  { path: '', component: HomeComponent }
+  {path: 'overtime', component: OvertimeComponent},
+  {path: '', component: HomeComponent}
 
 ];
 
@@ -13,4 +13,5 @@ export const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

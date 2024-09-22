@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router, RouterOutlet} from '@angular/router';
+import {RouterOutlet} from '@angular/router';
 import {OvertimeComponent} from "./components/overtime/overtime.component";
 import {NgIf} from "@angular/common";
 import {MatButton} from "@angular/material/button";
@@ -11,7 +11,7 @@ import {MatButton} from "@angular/material/button";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   isLoading = true;
 
   ngOnInit(): void {
