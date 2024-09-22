@@ -20,7 +20,8 @@ export class OvertimeComponent implements OnInit {
   displayedColumns: string[] = ['id', 'creationDate', 'overtimeDate', 'status', 'duration'];
   dataSource = new MatTableDataSource<OvertimeResponseDto>();
 
-  constructor(private overtimeService: OvertimeService) {}
+  constructor(private overtimeService: OvertimeService) {
+  }
 
   ngOnInit(): void {
     this.loadOvertimes();

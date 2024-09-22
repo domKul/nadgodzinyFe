@@ -9,7 +9,8 @@ import {OvertimeResponseDto} from "../model/OvertimeResponseDto";
 export class OvertimeService {
   private baseUrl = 'http://localhost:8080/api/v1/overtimes';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+  }
 
   getAllOvertimes(): Observable<OvertimeResponseDto[]> {
     return this.http.get<OvertimeResponseDto[]>(this.baseUrl);
